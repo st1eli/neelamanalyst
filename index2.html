@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neelam Cricket Analyst</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body  class="grid place-items-center" style="height: 100vh;">
+    <main>
+        <div class="flex place-content-center place-items-center">
+        <h1 class="text-2xl font-bold text-center flex place-items-center place-content-center">I am cricket Analyst</h1>
+    </div>
+    <div class="flex place-content-center place-items-center">
+        <img src="logo.jpg" alt="" class="w-40  h-40 mt-6">
+        </div>
+        <div class="flex gap-2 place-content-center place-items-center mt-10">
+            <div class="grid place-content-center place-items-center text-2xl font-semibold">
+                <strong class="text-red-700">00 : </strong> 
+              <strong class="uppercase text-red-700 font-mono font-200 text-center font-normal font-sm" >days</strong>
+            </div>
+        
+            <div class="grid place-content-center place-items-center text-2xl font-semibold">
+                <strong class="text-red-700">00 : </strong> 
+              <strong class="uppercase text-red-700 font-mono font-200 text-center font-normal font-sm" >hours</strong>
+            </div>
+           
+            <div class="grid place-content-center place-items-center text-2xl font-semibold">
+                <strong class="text-red-700">00 : </strong> 
+              <strong class="uppercase text-red-700 font-mono font-200 text-center font-normal font-sm" >minutes</strong>
+            </div>
+          
+            <div class="grid place-content-center place-items-center text-2xl font-semibold">
+                <strong class="text-red-700" id="countdown">60</strong> 
+              <strong class="uppercase text-red-700 font-mono font-200 text-center font-normal font-sm" >seconds</strong>
+            </div>
+        
+        </div>
+        <h1 class="text-4xl text-center mt-6 uppercase flex place-items-center place-content-center text-red-500 font-sans" style="font-weight: 800;">👑 Neelam Cricket Analyst 👑</h1>
+
+        <a href="https://t.me/+v5ADtHy_jms0ODU0" class="text-center flex place-content-center place-items-center"> 
+            <button class="flex bg-sky-600 duration-300 active:scale-105 gap-4  px-4 mt-10 py-4 place-items-center justify-between rounded " style="box-shadow: 0px 3px 1px 2px rgb(83, 80, 80) ;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="white" class="bi bi-telegram bg-sky-600 rounded-full" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+              </svg>
+<span class="text-white font-normal text-3xl">SUBSCRIBE</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="white" class="bi bi-telegram bg-sky-600 rounded-full" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+              </svg>
+
+        </button>
+        </a>
+    </div>
+    </main>
+    <script>
+        let remainingSeconds = 60;
+       
+      
+        function updateCountdown() {
+          document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+         
+      
+          remainingSeconds -= 1;
+         
+      
+          if (remainingSeconds < 0) {
+            remainingSeconds = 60; 
+          }
+        
+        }
+      
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+      </script>
+    
+</body>
+</html>
